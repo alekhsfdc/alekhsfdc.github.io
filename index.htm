@@ -1,5 +1,179 @@
 <html>
+<head>
 
-Niggas !
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
 
+<title>
+Alekh Sharma - Jaipur Based Salesforce Developer
+</title>
+	<style>
+	* { text-decoration: none;
+
+   }
+	.header{
+	width: 40%;
+    float: left;
+    
+    margin-left:18%;
+    margin-top:8%; 
+    border: 0px solid red;
+    font-size: 65px;
+    line-height: 30px;
+    color: #383838;
+    font-family: 
+	}
+
+	.bodymain {
+    background-image: url('/images/1.png');
+    margin-left:10%;
+    margin-right: 10%;
+    color: gray;
+    margin-bottom: 1%;
+    font-size: 42px;
+    text-align: center;
+	}
+
+	/* Style the links inside the sidenav */
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    right: -75px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    margin-top: 11%;
+    padding: 15px; /* 15px padding */
+    width: 120px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 15px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 50px 0px 0px 50px; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+    right: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+    top: 20px;
+    background-color: #4CAF50;
+}
+
+#blog {
+    top: 80px;
+    background-color: #2196F3; /* Blue */
+}
+
+#projects {
+    top: 140px;
+    background-color: #f44336; /* Red */
+}
+
+#contact {
+    top: 200px;
+    background-color: #555 /* Light Black */
+}
+
+	</style>
+	<script type="text/javascript">
+		var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid lime; color:#1798c1}";
+        document.body.appendChild(css);
+    };
+	</script>
+</head>
+<body background="images/1.jpg">
+
+	<div>
+		<spam class="header">	
+			<p><spam style="color:#1798c1">HI</spam> I<spam style="color:#1798c1">'</spam>M</p>
+			<p><spam style="color:grey">आलेख</spam> SHARMA<spam style="color:#1798c1">.</spam></p>
+				<h1>
+  					<a href="" class="typewrite" data-period="150" data-type='[ "Salesforce and Web Developer.", "Salesforce Certified Platform DEVELOPER 1", "Salesforce Certified Administrator", "I am Creative.", "I Love to Design.", "I Love to Develop new things :) ." ]'>
+  					  <span class="wrap"></span>
+  					</a>
+				</h1>
+		</spam>
+		<div style="border :0px solid black; height: 90%;">
+			<img src="images/salesforce_logo_detail.png" width="11%" height="18%" style="margin-top: 15%;">
+		</div>
+	</div>
+		<spam style="margin-top:20%;">
+		<div id="mySidenav" class="sidenav">
+  				<a href="#" id="about" class="w3-animate-opacity"><img src="https://png.icons8.com/employee-card/color/24" title="Employee Card" width="24" height="24">  About </a>
+		  		<a href="#" id="blog" class="w3-animate-opacity"><img src="https://png.icons8.com/google-blog-search/color/24" title="Google Blog Search" width="24" height="24">  Blog</a>
+  				<a href="#" id="projects" class="w3-animate-opacity"><img src="https://png.icons8.com/work/color/24" title="Work" width="24" height="24">  Projects</a>
+ 			 	<a href="#" id="contact" class="w3-animate-opacity"><img src="https://png.icons8.com/globe/color/24" title="Globe" width="24" height="24"> Contact</a>
+		</div>
+		</spam>
+	<div>
+		<div class="bodymain">
+			<button class="w3-button w3-large w3-blue w3-round w3-hover-text-black"><a href="Alekh_Resume.pdf">Resume</a></button>
+			<br/>
+
+			<li class="w3-xlarge fa fa-linkedin" style="color:	#0077b5;"><a href="linkedin.com/in/alekhsfdc"></a> </li>&nbsp&nbsp&nbsp
+			<li class="w3-xlarge fa fa-envelope" style="color: #d34836"><a href=""></a> </li>&nbsp&nbsp&nbsp
+			
+			<li class="w3-xlarge fa fa-facebook" style="color: #3b5998"><a href=""></a> </li>
+			
+			<br/><br/>
+			<spam style="color:#383838; font-size: 15px;">I <img src="images/1f499.png" width="2%"> Salesforce</spam>
+		</div>
+	</div>
+
+</body>
 </html>
